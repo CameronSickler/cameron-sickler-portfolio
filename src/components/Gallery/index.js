@@ -1,23 +1,15 @@
-import React from "react";
-
-import photo from "../../assets/small/commercial/gather-the-magic.jpg";
+import React from 'react';
+import PhotoList from '../PhotoList';
 
 function Gallery(props) {
-    const currentCategory = {
-        name: "Gather The Magic",
-        description:
-            "An application for viewing magic the gathering cards",
-    };
+    const { currentCategory } = props;
     return (
         <section>
-            <h1>{currentCategory.name}</h1>
-            <p>{currentCategory.name}</p>
-            <div>
-                <img
-                    src={photo}
-                />
-            </div>
+            <h1 data-testid="h1tag">{currentCategory.name}</h1>
+            <p>{currentCategory.description}</p>
+            <PhotoList category={currentCategory.name} />
         </section>
     );
 }
+
 export default Gallery;

@@ -1,51 +1,60 @@
-import React from 'react';
+import React from "react";
 
+function Nav(props) {
 
-function Nav() {
-    const categories = [
-        { name: 'Experience', description: 'Applications I worked on' },
-        { name: 'Resume', description: 'Resume image' }
-    ];
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+    } = props;
 
-    const handleClick = () => {
-        console.log("click handled")
-    }
-
-    function categorySelected(name) {
-        console.log(`${name} clicked`)
-    }
+    const handleClick = (item) => {
+        console.log(item);
+        return item;
+    };
 
     return (
-        <header data-testid="header" className="flex-row px-1">
+        <header className="flex-row px-1">
             <h2>
-                <a href="/">
-                    <span role="img" aria-label="dog">🐶</span> Cameron
+                <a data-testid="link" href="/">
+                    <span role="img" aria-label="dog">
+                        {" "}
+                        🐶
+                    </span>{" "}
+                    Cameron
                 </a>
             </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about" onClick={() => handleClick()}>
+                        <a data-testid="about" href="#about">
                             About me
                         </a>
                     </li>
                     <li className={"mx-2"}>
-                        <span onClick={() => handleClick()}>
+                        <span onClick={() => handleClick('Contact')}>
                             Contact
                         </span>
                     </li>
-                    {
-                        categories.map((category) => (
-                            <li className="mx-1" key={category.name} >
-                                <span onClick={() => categorySelected(category.name)}>
-                                    {category.name}
-                                </span>
-                            </li>
-                        ))
-                    }
+                    {categories.map((category) => (
+                        <li
+                            className={`mx-1 ${currentCategory.name === category.name
+                                }`}
+                            key={category.name}
+                        >
+                            <span
+                                onClick={() => {
+                                    setCurrentCategory(category);
+                                }}
+                            >
+                                {category.name}
+                            </span>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
     );
 }
+
 export default Nav;

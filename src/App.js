@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from "./components/Gallery";
+import Gallery from './components/Gallery';
 
 function App() {
+  const [categories] = useState([
+    {
+      name: 'Experience',
+      description: 'Experience',
+    },
+    { name: 'Resume', description: 'Resume' }
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   return (
     <div>
-      <Nav></Nav>
+      <Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+      ></Nav>
       <main>
-        <Gallery></Gallery>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
     </div>
