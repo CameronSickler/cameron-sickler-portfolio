@@ -1,28 +1,30 @@
 import React, { useState } from 'react';
 
 const PhotoList = ({ category }) => {
+
     const [photos] = useState([
+
         {
             name: 'Run Buddy',
-            category: 'commercial',
+            category: 'Experience',
             description:
                 'Description Here'
         },
         {
             name: 'Meal Maker',
-            category: 'commercial',
+            category: 'Experience',
             description:
                 'Description Here'
         },
         {
             name: 'Coding N Kobolds',
-            category: 'commercial',
+            category: 'Experience',
             description:
                 'Description Here'
         },
         {
             name: 'Gather The Magic',
-            category: 'commercial',
+            category: 'Experience',
             description:
                 'Description Here'
         }
