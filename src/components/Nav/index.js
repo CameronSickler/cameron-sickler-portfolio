@@ -12,17 +12,8 @@ function Nav(props) {
 
     return (
         <header className="flex-row px-1">
-            <h2>
-                <a data-testid="link" href="/">
-                    <span role="img" aria-label="dog">
-                        {" "}
-                        🐶
-                    </span>{" "}
-                    Cameron
-                </a>
-            </h2>
             <nav>
-                <ul className="flex-row">
+                <ul className="flex-row justify-content">
                     {categories.map((category) => (
                         <li
                             className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
@@ -39,6 +30,31 @@ function Nav(props) {
                             </span>
                         </li>
                     ))}
+                    <li>
+                        <a data-testid="link" href="https://www.linkedin.com/in/cameron-sickler-a17764106/" rel="noreferrer" target="_blank">
+                            <span role="img" aria-label="linkedin">
+                                {" "}
+                                <img className="icon mx-1"
+                                    src={require(`../../assets/icons/linkedin.png`)}
+                                    alt="linkedIn"
+                                />
+                            </span>{" "}
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a data-testid="link" href="https://github.com/CameronSickler" rel="noreferrer" target="_blank">
+                            <span role="img" aria-label="github">
+                                {" "}
+                                <img className="icon mx-1"
+                                    src={require(`../../assets/icons/github.png`)}
+                                    alt="github"
+                                />
+                            </span>{" "}
+
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -23,7 +23,7 @@ main {
 
 :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
+  --secondary: #c88833;
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #000000;
@@ -51,7 +51,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: url(/src/assets/cover/cover-image.jpg);
+  background-size: cover;
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
@@ -102,14 +103,18 @@ a {
   color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
+  transition: .5s;
 }
 
 a:hover {
-  text-decoration: underline;
+  opacity: .5;
+  transition: .5s;
 }
 
 header {
   background: var(--dark);
+  justify-content: center;
+  width: 100%;
 }
 
 header a {
@@ -141,30 +146,23 @@ img {
   max-width: 100%;
 }
 
+
 span[role="img"] {
   cursor: default;
+  transition: .5s;
 }
 
-form {
-  width: 40%;
-}
-
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+span:hover {
+  transition: .5s;
+  opacity: .7;
 }
 
 li {
   list-style: none;
+}
+
+nav {
+  width: 100%;
 }
 
 nav a:hover {
@@ -196,6 +194,14 @@ textarea {
 
 .space-between {
   justify-content: space-between;
+}
+
+.justify-content {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
 }
 
 .flex-end {
@@ -252,11 +258,22 @@ textarea {
   text-align: center;
 }
 
+.icon {
+  width: 25px;
+}
+
 .img-thumbnail {
   width: auto;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+  box-shadow: 10px 10px 5px black;
+  transition: .5s;
+}
+
+.img-thumbnail:hover {
+  opacity: .5;
+  transition: .5s;
 }
 
 .modalBackdrop {
@@ -280,13 +297,13 @@ textarea {
 }
 
 .modalTitle {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 
 button {
-  background: var(--primary);
+  background: var(--secondary);
   border: 0;
   border-radius: 5px;
   color: #fff;
