@@ -11,25 +11,29 @@ const PhotoList = ({ category }) => {
             name: 'Run Buddy',
             category: 'Experience',
             description:
-                'Run Buddy is a mock website that offers fitness training services. This was my first learning project in the University of Wisconsin Coding Bootcamp. HTML is the primary language used to develop this website.'
+                'Run Buddy is a mock website that offers fitness training services. This was my first learning project in the University of Wisconsin Coding Bootcamp. HTML is the primary language used to develop this website. Click the image to visit Run Buddy in a new browser.',
+            link: 'https://cameronsickler.github.io/run-buddy/'
         },
         {
             name: 'Meal Maker',
             category: 'Experience',
             description:
-                'Meal Maker is a mobile first application created as a tool to help users find recipes by inputing food ingredients and returning recipes containing those ingredients to the user. This was our first group project in the University of Wisconsin Full Stack Coding Bootcamp. Materialize CSS, Spoonacular, Edamam, and Javascript are primary resources used to develop this application.'
+                'Meal Maker is a mobile first application created as a tool to help users find recipes by inputing food ingredients and returning recipes containing those ingredients to the user. This was our first group project in the University of Wisconsin Full Stack Coding Bootcamp. Materialize CSS, Spoonacular, Edamam, and Javascript are primary resources used to develop this application. Click the image to visit Meal Maker in a new browser.',
+            link: 'https://patrickarcher414.github.io/meal-maker/'
         },
         {
             name: 'Coding N Kobolds',
             category: 'Experience',
             description:
-                'Coding N Kobolds fantasy avatar creator application that allows the user to create, edit, and save custom avatars. This was our second group project in the University of Wisconsin Full Stack Coding Bootcamp. Node Package Manager (NPM), My Structured Query Language (MYSQL), Sequelize, Heroku, Handlebars, Bootstrap CSS, and Javascript are the primary resources used to develop this application.'
+                'Coding N Kobolds fantasy avatar creator application that allows the user to create, edit, and save custom avatars. This was our second group project in the University of Wisconsin Full Stack Coding Bootcamp. Node Package Manager (NPM), My Structured Query Language (MYSQL), Sequelize, Heroku, Handlebars, Bootstrap CSS, and Javascript are the primary resources used to develop this application. Click the image to visit Coding N Kobolds in a new browser.',
+            link: 'https://codingnkobolds.herokuapp.com/'
         },
         {
             name: 'Gather The Magic',
             category: 'Experience',
             description:
-                'Gather the Magic is a full stack single page application (SPA) that allows users to view Magic the Gathering cards. This was our last group project in the University of Wisconsin Full Stack Coding Bootcamp. MongoDB, GraphQL API, Express.js, Node.js, REACT, Heroku, and Javascript are the primary resources used to develop this application.'
+                'Gather the Magic is a full stack single page application (SPA) that allows users to view Magic the Gathering cards. This was our last group project in the University of Wisconsin Full Stack Coding Bootcamp. MongoDB, GraphQL API, Express.js, Node.js, REACT, Heroku, and Javascript are the primary resources used to develop this application. Click the image to visit Gather The Magic in a new browser. My apologizes if the application is not available, I am working with my team to fix the issue.',
+            link: 'https://gather-the-magic.herokuapp.com/'
         }, {
             name: 'Cameron Sickler',
             category: 'Bio',
@@ -40,13 +44,13 @@ const PhotoList = ({ category }) => {
             name: 'Hobbies',
             category: 'Bio',
             description:
-                'When I am away from my desk I enjoy fishing with my grandparents (as seen above), cycling, sandpit volleyball leagues, bringing my dog to the dog park, and causally learning spoken languages (currently working on Italian).'
+                'A few of my favorite activities include cycling, sandpit volleyball leagues, bringing my dog to the dog park, and causally learning spoken languages (currently working on Italian).'
 
         }, {
             name: 'Personal Life',
             category: 'Bio',
             description:
-                'I currently reside in Madison Wisconsin and have been living here since 2021. I try to explore at least one local event a week if I can! I live here with my dog and two cats.'
+                'I currently reside in Madison Wisconsin and have been living here since 2021. I try to explore a few  local events every month if I can! Living here with me is my dog and two cats.'
 
         }, {
             name: 'Certification',
