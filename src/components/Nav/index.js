@@ -55,6 +55,20 @@ function Nav(props) {
 
                         </a>
                     </li>
+
+                    <li>
+                        <a data-testid="link" href="https://www.youtube.com/channel/UCj-SoL543DW7DIkDCOjPbuw" rel="noreferrer" target="_blank">
+                            <span role="img" aria-label="youtube">
+                                {" "}
+                                <img className="icon mx-1"
+                                    src={require(`../../assets/icons/youtube.png`)}
+                                    alt="youtube"
+                                />
+                            </span>{" "}
+
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
         </header>

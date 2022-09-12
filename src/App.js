@@ -6,11 +6,11 @@ function App() {
   const [categories] = useState([
     {
       name: 'Bio',
-      description: 'Click the photos below to learn more about me! You can also check me out on LinkedIn and GitHub.',
+      description: 'Welcome to my portfolio! This application is built with REACT. Click the photos below to learn more about me. You may further explore my portfolio by clicking the titles and icons on the navigation bar. Be sure to visit my LinkedIn, Github, and Youtube.',
     },
     {
       name: 'Experience',
-      description: 'Click the photos below to learn about applications I worked on. Please checkout my GitHub to see more.',
+      description: 'Click the photos below to learn about applications I worked on. Please checkout my GitHub and Youtube to see more examples.',
     },
     { name: 'Resume', description: 'Click the photos below to see more information about my work history, relevant experience, and certifications.' }
   ]);
