@@ -54,7 +54,7 @@ body {
   background: url(/src/assets/cover/cover-image.jpg);
   background-size: cover;
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', regular;
   text-align: center;
 
 }
